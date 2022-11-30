@@ -6,11 +6,11 @@ import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div className="flex w-full bg-white justify-center items-center">
+    <div className="flex w-full h-screen bg-white justify-center items-center">
       <LeftBar />
       <Hero />
 
-      <div className="w-3/4 bg-mypalegreen h-screen rounded-l-[40px]">
+      <div className="w-4/5 sm:w-3/5 lg:w-3/4 bg-mypalegreen h-screen rounded-l-[40px]">
         <NavBar />
         <Skills />
       </div>

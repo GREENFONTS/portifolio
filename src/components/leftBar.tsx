@@ -2,34 +2,37 @@ import { FaWhatsapp, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const LeftBar = () => {
   return (
-    <div className="w-1/4 flex">
-      <div className="flex flex-col absolute top-10 left-10">
-        <div className="flex flex-col justify-center items-center gap-y-2">
-          <div className="flex justify-center items-center w-[142px] h-[42px] bg-gray-500  text-2xl text-gray-100">
-            Elevio
-          </div>
-          <h2 className="text-dark text-lg">Frontend Developer/MERN Stack</h2>
+    <div className="w-1/5 sm:w-2/5 lg:w-1/4 flex flex-col justify-between h-screen py-[25px] md:py-[42px]">
+      <div className="xs:max-sm:hidden flex flex-col items-center gap-y-2">
+        <div className="flex justify-center items-center w-[142px] h-[42px] bg-gray-500  text-2xl text-gray-100">
+          Elevio
         </div>
+        <h2 className="text-dark sm:text-sm md:text-md text-wrap lg:text-lg">
+          Frontend Developer/MERN Stack
+        </h2>
       </div>
 
-      <div className="flex  gap-x-[30px] justify-center items-center absolute bottom-[60px] left-10">
+      <div className="p-5 text-xl font-bold italic">Elevio</div>
+
+      <div className="flex flex-col sm:flex-row gap-y-3 sm:gap-x-[20px] md:gap-x-[30px] justify-center items-center text-[#000000] 
+      sm:text-[#876D2E] text-[20px] sm:text-[33px]">
         <a href="https://wa.link/b4v59f" target="_blank">
-          <FaWhatsapp color="#876D2E" size="33" />
+          <FaWhatsapp  />
         </a>
 
         <a href="https://twitter.com/GODWILLONYEWUC1" target="_blank">
-          <FaTwitter color="#876D2E" size="33" />
+          <FaTwitter  />
         </a>
 
         <a
           href="https://www.linkedin.com/in/godwill-onyewuchi-6746621b4/"
           target="_blank"
         >
-          <FaLinkedin color="#876D2E" size="33" />
+          <FaLinkedin  />
         </a>
 
         <a href="https://github.com/GREENFONTS/" target="_blank">
-          <FaGithub color="#876D2E" size="33" />
+          <FaGithub  />
         </a>
       </div>
     </div>
