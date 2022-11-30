@@ -33,7 +33,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      <div className="flex w-full justify-center items-center">
+      <div className="sm:hidden flex w-full justify-center items-center">
         <img src={MenuIcon} alt="menu" />
       </div>
     </div>
