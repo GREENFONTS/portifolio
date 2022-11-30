@@ -2,7 +2,7 @@ import { FaWhatsapp, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const LeftBar = () => {
   return (
-    <div className="w-1/5 sm:w-2/5 lg:w-1/4 flex flex-col justify-between h-screen py-[25px] md:py-[42px]">
+    <div className="w-1/5 sm:w-2/5 lg:w-1/4 flex flex-col justify-between h-screen py-[25px] md:py-[20px]">
       <div className="xs:max-sm:hidden flex flex-col items-center gap-y-2">
         <div className="flex justify-center items-center w-[142px] h-[42px] bg-gray-500  text-2xl text-gray-100">
           Elevio

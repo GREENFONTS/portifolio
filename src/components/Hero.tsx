@@ -1,9 +1,9 @@
 const Hero = () => {
   return (
     <>
-      <div className="flex w-[78%] h-[392px] sm:h-[460px] md:h-[475px] lg:h-[520px] absolute left-0">
+      <div className="flex w-[75%]  h-[392px] sm:h-[400px] md:h-[450px] lg:h-[430px] absolute left-0">
         <div className="w-full lg:w-1/2 bg-[#7596D5] sm:bg-gradient-to-r from-blue-900 to-blue-600 sm:rounded-r-[30px] md:rounded-r-[0px]">
-          <div className="xs:max-sm:hidden bg-hero w-full h-full object-cover opacity-50 sm:rounded-r-[30px] md:rounded-r-[0px]"></div>
+          <div className="xs:max-sm:hidden bg-hero bg-no-repeat w-full h-full object-cover opacity-50 sm:rounded-r-[30px] md:rounded-r-[0px]"></div>
         </div>
 
         <div className="md:w-1/2 bg-darkblue rounded-r-[30px] "></div>

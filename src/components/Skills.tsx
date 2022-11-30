@@ -17,7 +17,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col md:flex-row sm:gap-[0px]  md:gap-[20px] lg:gap-[130px] items-center absolute bottom-4 md:bottom-0 md:mx-[30px] lg:mx-[50px]">
+    <div className="flex flex-col md:flex-row justify-between items-center absolute bottom-4 md:bottom-1 md:mx-[30px] lg:mx-[50px]">
       <div className="w-full lg:w-2/5 text-white text-center md:text-left h-[40px] md:h-auto">
         <h2 className="text-[25px] md:text-[20px] lg:text-[30px] md:leading-[27px] lg:leading-[37px] font-bold">
           Skills and Tools
