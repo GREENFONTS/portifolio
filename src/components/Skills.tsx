@@ -32,7 +32,8 @@ const Skills = () => {
         <img src="/RightArrow.svg" alt="" />
       </div>
 
-      <div className="grid grid-cols-6  md:grid-cols-4 gap-x-4 md:gap-x-7 gap-y-4 text-[#fff] text-[25px] sm:text-[35px]">
+      <div className="grid grid-cols-6 animate-marquee whitespace-nowrap  md:grid-cols-4 gap-x-4 md:gap-x-7 gap-y-4 text-[#fff] text-[25px] sm:text-[35px]">
+        
         <SiReact />
         <TbBrandNextjs />
         <SiRedux />
