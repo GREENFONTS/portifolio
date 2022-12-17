@@ -1,6 +1,6 @@
 //  @type {import('tailwindcss').Config}
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}",  "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",],
   theme: {
     extend: {
       colors: {
@@ -11,16 +11,17 @@ module.exports = {
         hero: "url('/MyPic.jpg')",
       },
       screens: {
-        xs:"200px",
+        xs: "200px",
         sm: "481px",
 
         md: "769px",
 
         lg: "1025px",
         xl: "1201px",
-      
       },
     },
   },
-  plugins: [],
+
+  plugins: [require("flowbite/plugin")],
+
 };

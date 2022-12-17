@@ -40,7 +40,7 @@ const NavBar = () => {
                   Download CV
                 </button>
 
-                <Link to="/">Projects</Link>
+                <Link to="/projects">Projects</Link>
 
                 <p
                   onClick={() => setShowContact(!showContact)}
@@ -72,7 +72,7 @@ const NavBar = () => {
                   Download CV
                 </button>
 
-                <Link to="/">Projects</Link>
+                <Link to="/projects">Projects</Link>
 
                 <p
                   onClick={() => setShowContact(!showContact)}
