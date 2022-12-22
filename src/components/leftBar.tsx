@@ -1,32 +1,50 @@
+import { useEffect, useState } from "react";
 import {
   FaWhatsapp,
   FaTwitter,
   FaLinkedin,
   FaGithub,
-  FaCode,
 } from "react-icons/fa";
-import { GoCode } from "react-icons/go";
 import { useLocation } from "react-router-dom";
 
 const LeftBar = () => {
   const { pathname } = useLocation();
+  const [quote, setQuote] = useState("");
+
+  const FetchQuote = async () => {
+    const res = await fetch("");
+    const data = await res.json();
+  };
+
+  useEffect(() => {
+    console.log("heyy 77");
+    setQuote("hey");
+  }, []);
+
+  useEffect(() => {
+    setInterval(() => {
+      console.log("heyy");
+    }, 5000);
+  }, [quote]);
 
   return (
     <div className="w-1/5 sm:w-2/5 lg:w-1/4 flex flex-col justify-between h-screen py-[25px] md:py-[20px]">
       <div className="w-4/5 xs:max-sm:hidden mx-auto flex flex-col items-center gap-y-2">
         <div className="flex justify-center items-center w-[142px] h-[42px] bg-gray-500  text-2xl text-gray-100">
-          Elevio
+          <a href="/"> Elevio</a>
+         
         </div>
         <h2 className="text-dark sm:text-sm md:text-md text-wrap">
           Frontend Developer/MERN Stack
         </h2>
 
-        {pathname === "/projects" && (
+        {/* {pathname === "/projects" && (
           <div className="flex my-[50px] gap-x-4 items-center text-md">
             <GoCode />
             <p>Frontend Development</p>
+            {quote}
           </div>
-        )}
+        )} */}
       </div>
 
       <div className="p-5 text-xl font-bold italic sm:hidden">Elevio</div>

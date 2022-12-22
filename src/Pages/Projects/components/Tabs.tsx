@@ -147,6 +147,7 @@ const Tabs = () => {
                 description={ele.description}
                 link={ele.link}
                 key={PublicProjects.indexOf(ele)}
+                image={ele.image}
               />
             ))}
           </div>
@@ -157,12 +158,13 @@ const Tabs = () => {
           }
         >
           <div className="grid md:grid-cols-2 gap-4 w-full h-[65vh] overflow-y-scroll">
-          {PersonalProjects.map((ele) => (
+            {PersonalProjects.map((ele) => (
               <ProjectView
                 title={ele.title}
                 description={ele.description}
                 link={ele.link}
                 key={PublicProjects.indexOf(ele)}
+                image={ele.image}
               />
             ))}
           </div>

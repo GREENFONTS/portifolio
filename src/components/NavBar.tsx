@@ -1,12 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import MenuIcon from "../assets/MenuIcon.svg";
-import CloseMenu from "../assets/CloseMenu.svg";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
 
 import { RiWhatsappFill } from "react-icons/ri";
 import { IoMdMailUnread } from "react-icons/io";
 import { SiHashnode } from "react-icons/si";
+import { MenuIcon, CloseMenu } from "../assets";
 
 const NavBar = () => {
   const [showContact, setShowContact] = useState(false);
@@ -86,12 +85,17 @@ const NavBar = () => {
                   onClick={() => setShowContact(!showContact)}
                 >
                   <a href="https://wa.link/b4v59f" target="_blank">
-                  Contact Me</a>
+                    Contact Me
+                  </a>
                 </button>
               </div>
             </div>
             <div className="sm:hidden w-1/5">
-              <img src={CloseMenu} alt="menu" onClick={() => setShowContact(false)} />
+              <img
+                src={CloseMenu}
+                alt="menu"
+                onClick={() => setShowContact(false)}
+              />
             </div>
           </div>
 
